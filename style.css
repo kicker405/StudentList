@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+p, h1,h2,h3,h4,h5,h6, ul, li, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: 'Muller', sans-serif;
+}
+
+.header__content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: rgb(226, 224, 224);
+}
+
+.header__form {
+display: flex;
+justify-content: space-around;
+margin-bottom: 30px;
+}
+
+.header__input {
+  text-align: center;
+  width: 170px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #78579a;
+  color: #000;
+}
+
+.header__input::placeholder {
+  color: #000;
+}
+
+.header__btn {
+  display: block;
+  align-self: center;
+  text-align: center;
+width: 400px;
+padding: 10px;
+background-color: #78579a;
+border-radius: 15px;
+color: #000;
+cursor: pointer;
+}
+
+/*Main*/
+ .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+display: flex;
+border: 3px solid rgb(70, 120, 120);
+}
+
+.main__titleItem {
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 5px;
+padding-right: 5px;
+width: 17%;
+cursor: pointer;
+}
+
+.main__titleItem:hover {
+  color: orange;
+}
+
+.main__list {
+display: flex;
+flex-direction: column;
+border: 1px solid rgb(70, 120, 120);
+list-style: none;
+}
+
+.main__items {
+display: flex;
+}
+
+.main__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 17%;
+}
+
+.main__warning {
+  position: absolute;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: beige;
+  font-size: 20px;
+}
+
+.main__warning-btn {
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 7px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main__filter {
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+}
+
+.filter__list {
+  display: flex;
+  list-style: none;
+  gap: 7px;
+  margin-right: 40px;
+}
+
+.filter__item {
+  width: 20%;
+}
+
+.filter__item:first-child {
+  width: 40%;
+}
+
+.filter-first {
+  width: 400px;
+}
+
+.main__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.main__btn:hover {
+  color: white;
+  background-color: rgb(160, 221, 201);
+}

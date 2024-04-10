@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="normolize.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="code.js"></script>
+</head>
+
+<body>
+    <header class="header">
+      <div class="header__content">
+        <form action="path" method="post" class="header__form">
+          <input id ='input1' class="header__input" type="text" required placeholder="Имя">
+          <input id ='input2' class="header__input" type="text" required placeholder="Фамилия">
+          <input id ='input3' class="header__input" type="text" required placeholder="Отчество">
+          <input id ='input4' class="header__input" type="date" min="1900-01-01" required placeholder="Дата рождения">
+          <input id ='input5' class="header__input" type="number" min="2000" max="2024" required placeholder="год начала обучения">
+          <input id ='input6' class="header__input" type="text" required placeholder="факультет">
+        </form>
+        <button id="form-btn" class="header__btn">Добавить студента</button>
+      </div>
+    </header>
+    <main class="main container">
+      <div class="main__filter filter" id="main-filter">
+        <ul class="filter__list" id="filter__list">
+          <li class="filter__item">
+            <input type="text" id="filter-input1" class="filter__input filter-first" placeholder="Имя Фамилия Отчество">
+          </li>
+          <li class="filter__item">
+            <input type="number" id="filter-input2" class="filter__input" placeholder="Начало обучения(год)">
+          </li>
+          <li class="filter__item">
+            <input type="number" id="filter-input3" class="filter__input" placeholder="Конец обучения(год)">
+          </li>
+          <li class="filter__item">
+            <input type="text" id="filter-input4" class="filter__input" placeholder="Факультет">
+          </li>
+        </ul>
+        <button disabled="true" class="main__btn" id="main-btn">
+          Сохранить
+        </button>
+      </div>
+      <div id="content" class="container main__content">
+
+      </div>
+    </main>
+</body>
+
+</html>
